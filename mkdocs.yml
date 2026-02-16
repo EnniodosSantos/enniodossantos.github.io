@@ -4,7 +4,7 @@ site_url: https://enniodossantos.github.io/
 theme:
   name: material
   language: pt-BR
-  logo: claw-marks.svg
+  logo: /claw-marks.svg
   features:
     - navigation.tabs
     - navigation.sections
