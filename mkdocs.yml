@@ -1,25 +1,14 @@
 site_name: Ennio dos Santos
-
-nav:
-  - Home: index.md
-  - Sobre: sobre.md
-  - Habilidades: Habilidades.md
-  - Projetos: Projetos.md
-  - Contato: Contato.md
-
+site_url: https://enniodossantos.github.io/
 theme:
-  font:
-    code: Helvetica
-  logo: claw-marks.svg
   name: material
   language: pt-BR
+  logo: material/database  # Ícone técnico no canto superior
   features:
-    - navigation.tabs  # Para as páginas aparecerem no menu superior
+    - navigation.tabs      # Cria o menu horizontal igual à referência
     - navigation.sections
-    - search.suggest
-    - content.code.copy
 
-  palette:
+palette:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -34,3 +23,12 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+
+
+nav:
+  - Home: index.md
+  - Sobre: sobre.md
+  - Habilidades: Habilidades.md
+  - Projetos: Projetos.md
+  - Contato: Contato.md
+
