@@ -1,15 +1,14 @@
 site_name: Ennio dos Santos
 site_url: https://enniodossantos.github.io/
+
 theme:
   name: material
   language: pt-BR
-  logo: material/database  # Ícone técnico no canto superior
+  logo: claw-marks.svg
   features:
-    - navigation.tabs      # Cria o menu horizontal igual à referência
+    - navigation.tabs
     - navigation.sections
-
-palette:
-
+  palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -23,7 +22,6 @@ palette:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-
 
 nav:
   - Home: index.md
