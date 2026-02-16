@@ -1,0 +1,36 @@
+site_name: Ennio dos Santos
+
+nav:
+  - Home: index.md
+  - Sobre: sobre.md
+  - Habilidades: Habilidades.md
+  - Projetos: Projetos.md
+  - Contato: Contato.md
+
+theme:
+  font:
+    code: Helvetica
+  logo: claw-marks.svg
+  name: material
+  language: pt-BR
+  features:
+    - navigation.tabs  # Para as páginas aparecerem no menu superior
+    - navigation.sections
+    - search.suggest
+    - content.code.copy
+
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
