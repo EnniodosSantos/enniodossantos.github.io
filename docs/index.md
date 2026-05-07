@@ -11,40 +11,72 @@
   }
 
   .project-card {
-    border: 1px solid #30363d;
+    border: 1px solid #c8d0da;
     border-radius: 8px;
     padding: 1.2rem;
-    background-color: #161b22;
+    background-color: #f0f4f8;
     transition: transform 0.2s, border-color 0.2s;
   }
 
   .project-card:hover {
-    border-color: #58a6ff;
+    border-color: #1a73e8;
     transform: translateY(-2px);
   }
 
   .project-card h4 {
     margin: 0 0 0.8rem 0;
-    color: #58a6ff;
+    color: #1a56db;
     font-family: 'Fira Code', monospace;
     font-size: 1.1rem;
   }
 
   .project-card p {
     font-size: 0.9rem;
-    color: #8b949e;
+    color: #374151;
     line-height: 1.5;
   }
 
   .project-tech {
     font-size: 0.75rem;
     font-family: monospace;
-    color: #c9d1d9;
-    background: #21262d;
+    color: #1e3a5f;
+    background: #dbeafe;
     padding: 3px 8px;
     border-radius: 12px;
     margin-right: 5px;
+    border: 1px solid #93c5fd;
+  }
+
+  .project-card a {
+    color: #1a56db !important;
+  }
+
+  /* Tema escuro */
+  [data-md-color-scheme="slate"] .project-card {
     border: 1px solid #30363d;
+    background-color: #6e768133;
+  }
+
+  [data-md-color-scheme="slate"] .project-card:hover {
+    border-color: #58a6ff;
+  }
+
+  [data-md-color-scheme="slate"] .project-card h4 {
+    color: #58a6ff;
+  }
+
+  [data-md-color-scheme="slate"] .project-card p {
+    color: #8b949e;
+  }
+
+  [data-md-color-scheme="slate"] .project-tech {
+    color: #c9d1d9;
+    background: #21262d;
+    border: 1px solid #30363d;
+  }
+
+  [data-md-color-scheme="slate"] .project-card a {
+    color: #58a6ff !important;
   }
 </style>
 
@@ -75,9 +107,9 @@ Estudante de Ciência de Dados com experiência aplicada nos setores de logísti
       <span class="project-tech">yfinance</span>
     </div>
     <div style="margin-top: 12px;">
-      <a href="./Projetos/#pipeline-b3" style="font-size:0.8rem; color:#58a6ff; margin-right: 12px;">Documentação →</a>
-      <a href="https://projeto-b3-ennio.streamlit.app/" target="_blank" style="font-size:0.8rem; color:#58a6ff; margin-right: 12px;">Dashboard →</a>
-      <a href="https://github.com/EnniodosSantos/projeto-b3" target="_blank" style="font-size:0.8rem; color:#58a6ff;">GitHub →</a>
+      <a href="./Projetos/#pipeline-b3" style="font-size:0.8rem; margin-right: 12px;">Documentação →</a>
+      <a href="https://projeto-b3-ennio.streamlit.app/" target="_blank" style="font-size:0.8rem; margin-right: 12px;">Dashboard →</a>
+      <a href="https://github.com/EnniodosSantos/projeto-b3" target="_blank" style="font-size:0.8rem;">GitHub →</a>
     </div>
   </div>
 
@@ -90,9 +122,9 @@ Estudante de Ciência de Dados com experiência aplicada nos setores de logísti
       <span class="project-tech">Pandas</span>
     </div>
     <div style="margin-top: 12px;">
-      <a href="./Projetos/#previsor-de-precos" style="font-size:0.8rem; color:#58a6ff; margin-right: 12px;">Documentação →</a>
-      <a href="https://projeto-previsao-airbnb.streamlit.app/" target="_blank" style="font-size:0.8rem; color:#58a6ff; margin-right: 12px;">App →</a>
-      <a href="https://github.com/EnniodosSantos/Projeto-Previsao-Airbnb" target="_blank" style="font-size:0.8rem; color:#58a6ff;">GitHub →</a>
+      <a href="./Projetos/#previsor-de-precos" style="font-size:0.8rem; margin-right: 12px;">Documentação →</a>
+      <a href="https://projeto-previsao-airbnb.streamlit.app/" target="_blank" style="font-size:0.8rem; margin-right: 12px;">App →</a>
+      <a href="https://github.com/EnniodosSantos/Projeto-Previsao-Airbnb" target="_blank" style="font-size:0.8rem;">GitHub →</a>
     </div>
   </div>
 
@@ -105,8 +137,8 @@ Estudante de Ciência de Dados com experiência aplicada nos setores de logísti
       <span class="project-tech">Matplotlib</span>
     </div>
     <div style="margin-top: 12px;">
-      <a href="./Projetos/#lyapy" style="font-size:0.8rem; color:#58a6ff; margin-right: 12px;">Documentação →</a>
-      <a href="https://enniodossantos.github.io/lyappy-docs/" target="_blank" style="font-size:0.8rem; color:#58a6ff;">Docs →</a>
+      <a href="./Projetos/#lyapy" style="font-size:0.8rem; margin-right: 12px;">Documentação →</a>
+      <a href="https://enniodossantos.github.io/lyappy-docs/" target="_blank" style="font-size:0.8rem;">Docs →</a>
     </div>
   </div>
 

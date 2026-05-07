@@ -28,12 +28,6 @@ Pipeline de dados de ponta a ponta para o mercado financeiro brasileiro. Cobre e
 - **EDA:** análise de preço normalizado (base 100), distribuição de retornos, heatmap de correlação entre ativos e volatilidade anualizada por ativo.
 - **Deploy:** app público no Streamlit Cloud com banco em Neon. Lógica de conexão dual (local via Docker / produção via variável de ambiente).
 
-#### Destaques técnicos
-
-- Carga incremental: `ON CONFLICT (ativo_id, data) DO NOTHING` — reprocessar os dados históricos não gera duplicatas.
-- Parâmetros nomeados no SQLAlchemy: previne SQL injection.
-- `@st.cache_data`: evita queries redundantes a cada interação do usuário.
-- Volatilidade anualizada: `std(retornos) * sqrt(252)` — convenção de mercado.
 
 ---
 
@@ -60,7 +54,7 @@ Modelo de regressão para precificação de imóveis no Rio de Janeiro, voltado 
 
 Biblioteca Python para geração e análise de séries temporais caóticas. Diferencial: usa aritmética de precisão arbitrária (módulo `decimal`) para mitigar erros de truncamento em órbitas de longo prazo.
 
-**Links:** [Documentação](https://enniodossantos.github.io/lyappy-docs/)
+**Links:** [Documentação](https://enniodossantos.github.io/lyapy-documentation)
 
 #### Stack
 
