@@ -4,7 +4,7 @@ site_url: https://enniodossantos.github.io/
 theme:
   name: material
   language: pt-BR
-  logo: /claw-marks.svg
+  logo: /gemini-svg (3).svg
   features:
     - navigation.tabs
     - navigation.sections
@@ -12,6 +12,8 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: blue  # <--- Mude para a cor desejada (ex: blue, teal, black)
+      accent: indigo   # Cor de links e botões
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
@@ -19,6 +21,8 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: blue  # <--- Barra preta no modo escuro
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -30,3 +34,11 @@ nav:
   - Projetos: Projetos.md
   - Contato: Contato.md
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/EnniodosSantos
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/seu-perfil
+    - icon: fontawesome/solid/graduation-cap
+      link: http://lattes.cnpq.br/seu-id

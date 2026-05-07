@@ -1,13 +1,8 @@
 <style>
-  /* Reset e Layout */
   .bs-sidebar { display: none !important; }
   .col-md-9 { width: 100% !important; border: none !important; }
   .container { max-width: 1000px; }
-  
-  /* Estilo de Texto Técnico */
-  kbd { background-color: #2e303e; color: #00ffc8; border: 1px solid #444; }
-  
-  /* Grid de Projetos */
+
   .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -54,41 +49,71 @@
 </style>
 
 # Ennio dos Santos
-**Data Science | UFMS**
+**Ciência de Dados · UFMS**
 
-Desenvolvimento de pipelines de dados, modelos preditivos e automações de monitoramento. Experiência aplicada nos setores de **Logística** e **Energia**, focada em transformar fluxos de dados em indicadores de performance (KPIs) e suporte à decisão via SQL e Python.
+Estudante de Ciência de Dados com experiência aplicada nos setores de logística e energia. Construo pipelines ETL, modelos preditivos e dashboards analíticos. Stack principal: Python, SQL, PostgreSQL e Power BI.
 
-### Stack Tecnológica
-* **Linguagens:** `Python (Pandas, Scikit-learn, PyTorch)`, `R`, `Julia`, `SQL`.
-* **BI & Dataviz:** `Power BI`, `Streamlit`, `Matplotlib/Seaborn`.
+---
 
-### Projetos em Destaque
+### Stack
+
+`Python` `SQL` `PostgreSQL` `Power BI` `Scikit-learn` `PyTorch` `Streamlit` `Docker` `R` `Julia`
+
+---
+
+### Projetos
 
 <div class="project-grid">
 
   <div class="project-card">
-    <h4>previsor-imoveis-rj</h4>
-    <p>Pipeline de regressão utilizando <b>Extra Trees Regressor</b>. Tratamento de outliers e deploy de interface preditiva.</p>
+    <h4>pipeline-b3</h4>
+    <p>Pipeline ETL de ponta a ponta para o mercado financeiro brasileiro. Coleta via yfinance, modelagem relacional em PostgreSQL, views com window functions e dashboard interativo em Streamlit.</p>
     <div style="margin-top: 15px;">
-      <span class="project-tech">Scikit-learn</span>
+      <span class="project-tech">PostgreSQL</span>
+      <span class="project-tech">Docker</span>
       <span class="project-tech">Streamlit</span>
+      <span class="project-tech">yfinance</span>
     </div>
-    <a href="./Projetos/#previsor" style="display:block; margin-top:15px; font-size:0.8rem; color:#58a6ff;">Acessar Documentação →</a>
+    <div style="margin-top: 12px;">
+      <a href="./Projetos/#pipeline-b3" style="font-size:0.8rem; color:#58a6ff; margin-right: 12px;">Documentação →</a>
+      <a href="https://projeto-b3-ennio.streamlit.app/" target="_blank" style="font-size:0.8rem; color:#58a6ff; margin-right: 12px;">Dashboard →</a>
+      <a href="https://github.com/EnniodosSantos/projeto-b3" target="_blank" style="font-size:0.8rem; color:#58a6ff;">GitHub →</a>
+    </div>
   </div>
 
   <div class="project-card">
-    <h4>Lyapy</h4>
-    <p>Biblioteca para análise de séries temporais caóticas e cálculo de expoentes de Lyapunov em sistemas dinâmicos.</p>
+    <h4>previsor-imoveis-rj</h4>
+    <p>Modelo de regressão para precificação de imóveis no Rio de Janeiro. Pipeline completo com tratamento de outliers, encoding e deploy via Streamlit Cloud.</p>
+    <div style="margin-top: 15px;">
+      <span class="project-tech">Scikit-learn</span>
+      <span class="project-tech">Streamlit</span>
+      <span class="project-tech">Pandas</span>
+    </div>
+    <div style="margin-top: 12px;">
+      <a href="./Projetos/#previsor-de-precos" style="font-size:0.8rem; color:#58a6ff; margin-right: 12px;">Documentação →</a>
+      <a href="https://projeto-previsao-airbnb.streamlit.app/" target="_blank" style="font-size:0.8rem; color:#58a6ff; margin-right: 12px;">App →</a>
+      <a href="https://github.com/EnniodosSantos/Projeto-Previsao-Airbnb" target="_blank" style="font-size:0.8rem; color:#58a6ff;">GitHub →</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h4>lyapy</h4>
+    <p>Biblioteca Python para geração e análise de séries temporais caóticas com aritmética de precisão arbitrária e cálculo exato de expoentes de Lyapunov.</p>
     <div style="margin-top: 15px;">
       <span class="project-tech">NumPy</span>
-      <span class="project-tech">SciPy</span>
+      <span class="project-tech">Decimal</span>
+      <span class="project-tech">Matplotlib</span>
     </div>
-    <a href="./Projetos/#lyapy" style="display:block; margin-top:15px; font-size:0.8rem; color:#58a6ff;">Acessar Documentação →</a>
+    <div style="margin-top: 12px;">
+      <a href="./Projetos/#lyapy" style="font-size:0.8rem; color:#58a6ff; margin-right: 12px;">Documentação →</a>
+      <a href="https://enniodossantos.github.io/lyappy-docs/" target="_blank" style="font-size:0.8rem; color:#58a6ff;">Docs →</a>
+    </div>
   </div>
 
 </div>
 
 <br>
 
-----------
-[GitHub](https://github.com/ennio) | [LinkedIn](https://linkedin.com/in/ennio) | [Lattes](http://lattes.cnpq.br/)
+---
+
+[GitHub](https://github.com/EnniodosSantos) · [LinkedIn](https://linkedin.com/in/enniobernardo) · [E-mail](mailto:enniobernardo96@gmail.com)
