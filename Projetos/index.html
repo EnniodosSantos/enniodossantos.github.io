@@ -512,17 +512,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#destaques-tecnicos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Destaques técnicos
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -712,17 +701,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#destaques-tecnicos" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Destaques técnicos
-      
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -886,13 +864,6 @@
 <li><strong>EDA:</strong> análise de preço normalizado (base 100), distribuição de retornos, heatmap de correlação entre ativos e volatilidade anualizada por ativo.</li>
 <li><strong>Deploy:</strong> app público no Streamlit Cloud com banco em Neon. Lógica de conexão dual (local via Docker / produção via variável de ambiente).</li>
 </ul>
-<h4 id="destaques-tecnicos">Destaques técnicos</h4>
-<ul>
-<li>Carga incremental: <code>ON CONFLICT (ativo_id, data) DO NOTHING</code> — reprocessar os dados históricos não gera duplicatas.</li>
-<li>Parâmetros nomeados no SQLAlchemy: previne SQL injection.</li>
-<li><code>@st.cache_data</code>: evita queries redundantes a cada interação do usuário.</li>
-<li>Volatilidade anualizada: <code>std(retornos) * sqrt(252)</code> — convenção de mercado.</li>
-</ul>
 <hr />
 <h2 id="previsor-de-precos">Previsor de Preços</h2>
 <p>Modelo de regressão para precificação de imóveis no Rio de Janeiro, voltado a proprietários e viajantes que utilizam plataformas de aluguel por temporada.</p>
@@ -909,7 +880,7 @@
 <hr />
 <h2 id="lyapy">Lyapy</h2>
 <p>Biblioteca Python para geração e análise de séries temporais caóticas. Diferencial: usa aritmética de precisão arbitrária (módulo <code>decimal</code>) para mitigar erros de truncamento em órbitas de longo prazo.</p>
-<p><strong>Links:</strong> <a href="https://enniodossantos.github.io/lyappy-docs/">Documentação</a></p>
+<p><strong>Links:</strong> <a href="https://enniodossantos.github.io/lyapy-documentation">Documentação</a></p>
 <h4 id="stack_2">Stack</h4>
 <p><code>Python</code> · <code>NumPy</code> · <code>Matplotlib</code> · <code>Decimal</code></p>
 <h4 id="o-que-o-projeto-faz_2">O que o projeto faz</h4>
