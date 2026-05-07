@@ -1,69 +1,78 @@
-No índice ao lado é possivel navegar pelos meus projetos
+# Projetos
 
---------------
+---
 
-## Lyapy: Biblioteca para Geração e Análise de Caos
+## Pipeline B3
 
-Lyapy é uma biblioteca em Python focada na geração e análise de séries temporais caóticas. Diferente de geradores comuns, ela utiliza aritmética de precisão arbitrária, expoentes de Lyapunov exato e variável e medidas invariantes de varios mapas caóticos
+Pipeline de dados de ponta a ponta para o mercado financeiro brasileiro. Cobre engenharia de dados, modelagem relacional em PostgreSQL e dashboard analítico em Streamlit com deploy em produção.
 
-#### Funcionalidades
+**Links:** [Dashboard](https://projeto-b3-ennio.streamlit.app/) · [GitHub](https://github.com/EnniodosSantos/projeto-b3)
 
-- Geração de Alta Precisão: Implementação baseada no módulo decimal para mitigar erros de truncamento em órbitas de longo prazo.
+#### Stack
 
-- Expoente de Lyapunov: Ferramentas para estimativa numérica e comparação direta com valores teóricos (analíticos).
+| Camada | Tecnologia |
+|---|---|
+| Coleta | yfinance, Python |
+| Transformação | Pandas |
+| Banco de dados | PostgreSQL 16, SQLAlchemy |
+| Containerização | Docker, Docker Compose |
+| Análise | Jupyter, Matplotlib, Seaborn |
+| Dashboard | Streamlit, Plotly |
+| Nuvem | Neon (PostgreSQL serverless) |
 
-- Análise de Convergência: Geração automática de relatórios de erro e gráficos de evolução do caos ($\lambda$).
+#### O que o projeto faz
 
-- Ecossistema de Mapas: Suporte a diversos sistemas clássicos como Mapas Logístico, Gauss, Bernoulli, Tenda e Chebyshev.
+- **ETL automatizado:** extração de 5 anos de cotações de 20 ativos (ações B3 + criptomoedas) via Yahoo Finance, transformação com Pandas e carga incremental no PostgreSQL com idempotência via `ON CONFLICT DO NOTHING`.
+- **Modelagem relacional:** schema normalizado (3FN) com foreign keys, constraints `CHECK`, índices B-tree e tipo `NUMERIC` para valores monetários.
+- **SQL analítico:** views com window functions (`LAG`, `AVG ROWS BETWEEN`), CTEs e métricas de mercado — retorno diário, médias móveis (MM20/MM50), volatilidade anualizada e ranking de retorno em 1 ano.
+- **EDA:** análise de preço normalizado (base 100), distribuição de retornos, heatmap de correlação entre ativos e volatilidade anualizada por ativo.
+- **Deploy:** app público no Streamlit Cloud com banco em Neon. Lógica de conexão dual (local via Docker / produção via variável de ambiente).
 
-#### Tecnologias e Metodologias
+#### Destaques técnicos
 
-Linguagem: Python.Matemática: Sistemas Dinâmicos Discretos e Teoria Ergódica.
-Bibliotecas: NumPy (processamento), Matplotlib (visualização), Decimal (precisão).
-Paradigma: Orientação a Objetos para extensibilidade de novos mapas.
+- Carga incremental: `ON CONFLICT (ativo_id, data) DO NOTHING` — reprocessar os dados históricos não gera duplicatas.
+- Parâmetros nomeados no SQLAlchemy: previne SQL injection.
+- `@st.cache_data`: evita queries redundantes a cada interação do usuário.
+- Volatilidade anualizada: `std(retornos) * sqrt(252)` — convenção de mercado.
+
+---
+
+## Previsor de Preços
+
+Modelo de regressão para precificação de imóveis no Rio de Janeiro, voltado a proprietários e viajantes que utilizam plataformas de aluguel por temporada.
+
+**Links:** [App](https://projeto-previsao-airbnb.streamlit.app/) · [GitHub](https://github.com/EnniodosSantos/Projeto-Previsao-Airbnb)
+
+#### Stack
+
+`Python` · `Scikit-learn` · `Extra Trees Regressor` · `Pandas` · `Joblib` · `Streamlit`
+
+#### O que o projeto faz
+
+- Pipeline completo de dados: limpeza, tratamento de outliers, encoding de variáveis categóricas e treinamento do modelo.
+- Variáveis de entrada: coordenadas geográficas (latitude/longitude), sazonalidade (mês/ano) e características do imóvel.
+- Interface web com Streamlit para entrada de dados e predição em tempo real.
+- Deploy no Streamlit Cloud integrado ao GitHub.
+
+---
+
+## Lyapy
+
+Biblioteca Python para geração e análise de séries temporais caóticas. Diferencial: usa aritmética de precisão arbitrária (módulo `decimal`) para mitigar erros de truncamento em órbitas de longo prazo.
+
+**Links:** [Documentação](https://enniodossantos.github.io/lyappy-docs/)
+
+#### Stack
+
+`Python` · `NumPy` · `Matplotlib` · `Decimal`
+
+#### O que o projeto faz
+
+- Geração de séries caóticas com precisão arbitrária via módulo `decimal`.
+- Cálculo numérico do expoente de Lyapunov com comparação direta ao valor teórico (analítico).
+- Relatórios automáticos de erro e gráficos de convergência do expoente λ.
+- Suporte a múltiplos mapas clássicos: Logístico, Gauss, Bernoulli, Tenda e Chebyshev.
 
 #### Aplicações
 
-- Ideal para Benchmarking de Redes Neurais, 
-
-- Testes de robustez em modelos de regressão, 
-
-- Criptografia baseada em caos,
-
-- Estudos de sensibilidade de Sistemas Dinamicos Não Lineares,
-
-#### Links do ProjetoDocumentação/
-
-[Documentação do Projeto](https://enniodossantos.github.io/lyappy-docs/)
-
-[Repositório no GitHub]
-
--------------
-
-## Previsor de Preços com Machine Learning
-
-Este projeto foi desenvolvido para auxiliar proprietários e viajantes a precificarem imóveis de forma justa e competitiva na cidade do Rio de Janeiro, utilizando algoritmos de Machine Learning.
-
-#### Funcionalidades
-
-- **Interface Web Intuitiva**: Desenvolvida com Streamlit para entrada de dados em tempo real.
-
-- **Análise Multivariada**: O modelo processa coordenadas geográficas (Latitude/Longitude), sazonalidade (Mês/Ano) e características estruturais do imóvel.
-
-- **Pipeline de Dados**: Implementação completa de limpeza, tratamento de outliers, codificação de variáveis categóricas e treinamento do modelo
-
-#### Tecnologias e Metodologias
-
-- **Linguagem**: Python.
-
-- **Algoritmo**: Extra Trees Regressor.
-
-- **Bibliotecas**: Scikit-learn, Pandas, Joblib.
-
-    **Deploy**: Streamlit Cloud integrado ao GitHub.
-
-- Links do Projeto
-
-[Acesse a Aplicação](https://projeto-previsao-airbnb.streamlit.app/)
-
-[Resitório no GitHub](https://github.com/EnniodosSantos/Projeto-Previsao-Airbnb)
+Benchmarking de redes neurais, testes de robustez em modelos de regressão, criptografia baseada em caos e estudos de sensibilidade em sistemas dinâmicos não lineares.
