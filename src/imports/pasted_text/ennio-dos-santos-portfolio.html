@@ -1,0 +1,58 @@
+Design a single-page portfolio website for Ennio dos Santos, a Data Science student at UFMS (Brazil) finishing his undergraduate degree. He has real professional experience in logistics and energy sectors using Python, SQL, and Power BI. He is NOT a UX designer or digital creative — the portfolio must communicate analytical and technical competence, not visual creativity. The aesthetic should feel professional, clean, and data-informed: think dashboard clarity, not agency portfolio flair.
+
+— ARCHITECTURE —
+Single-page layout with smooth anchor scroll. Sticky nav bar that highlights the active section. Sections in order: Hero · Projects · Skills · Experience · About · Contact. Each section has its own anchor ID. Fixed "back to top" button at bottom-right.
+
+— CONTENT —
+HERO: Name: Ennio dos Santos | Role: Data Science Student · UFMS | Tagline: "I turn raw data into operational decisions — from ETL pipelines to deployed predictive models." | CTAs: "See my projects" (anchor) and "Download CV" (placeholder).
+
+PROJECTS — 3 cards:
+1. Lyapy — Chaos Analysis Library | "Open-source Python library for generating and analyzing chaotic time series with arbitrary precision." | Stack: Python · NumPy · Matplotlib · OOP | Links: Documentation + GitHub (flag GitHub as placeholder — link missing) | Visual: placeholder screenshot area.
+2. Rio de Janeiro Airbnb Price Predictor | "End-to-end ML app that predicts short-term rental prices using geographic and seasonal features." | Stack: Python · Scikit-learn · Extra Trees · Streamlit · Pandas | Links: Live App + GitHub | Visual: placeholder screenshot area.
+3. Coming soon card | "ETL pipeline + relational data modeling" | Greyed out with stripe overlay.
+
+SKILLS — 3 badge groups:
+A) Data Science & ML: Python · SQL · R · Machine Learning · Statistical Modeling · EDA
+B) BI & Visualization: Power BI · Excel · Dashboards · KPI Definition · Data Storytelling
+C) Engineering & Infra: ETL Pipelines · PostgreSQL (cloud) · Streamlit Cloud · Git · TOTVS ERP
+
+EXPERIENCE — vertical timeline:
+Logistics & Energy Sector | [dates — placeholder] | Operational Data Analyst
+· Built performance reports and monitoring dashboards (SQL + Power BI)
+· Defined and tracked operational KPIs for logistics and infrastructure
+· Automated reporting routines with Python scripts
+· Worked with TOTVS ERP for stock and shipping management
+
+EDUCATION: Technology in Data Science · UFMS · In progress | Data Analysis with Python · USP ESALQ · Completed
+
+LANGUAGES: Portuguese (native) · English (intermediate/advanced) · French (beginner)
+
+CONTACT: Email [placeholder] | GitHub: github.com/EnniodosSantos | LinkedIn [placeholder — flag as pending] | Lattes [placeholder — flag as pending]
+
+— DESIGN SYSTEM —
+Colors: Background #FAFAFA | Cards #FFFFFF with 1px border #E5E5E5 | Primary accent #1B4FD8 | Secondary #0F9B6E | Text primary #111827 | Text secondary #6B7280 | Alternating section bands: white and #F9FAFB.
+Typography: Inter or IBM Plex Sans for headings (600 weight) and body (400, 16px, line-height 1.6). IBM Plex Mono for stack badges (12px). Section labels: 11px, 600, letter-spacing 0.1em, uppercase, #6B7280.
+Spacing: 8px base unit. 96px section padding. 24px card padding. Corner radius: 8px cards, 4px badges, 50% avatar.
+Grid: 12-column, max-width 1080px centered.
+
+— COMPONENTS —
+Project cards: 16:9 image placeholder area at top (gray with chart icon overlay) | title 18px/600 | one-liner 14px/400 | stack badge row | two icon-link buttons | 3px left border accent in primary blue | hover: 4px lift.
+Skill badges: pill-shaped chips, 12px monospace, grouped by category with group label. Blue-tint group A, teal-tint group B, gray-tint group C.
+Nav bar: 64px height, sticky, white, 1px bottom border. Active link: primary blue + 2px underline. Mobile: hamburger.
+Timeline: vertical connecting line left, blue dot per entry, bold role title, secondary color for company, bullet points with blue dots.
+Contact buttons: card-button with icon + label + URL. Placeholder links show red "⚠ link pending" badge.
+
+— DO NOT INCLUDE —
+No MkDocs documentation sidebar. No search bar. No breadcrumbs. No separate page routes. No decorative animations or hero illustrations. No testimonials section. No skill progress bars (e.g. Python: 80%). No dark mode toggle. No design agency aesthetic.
+
+— NIELSEN HEURISTICS CHECKLIST —
+H1: Active nav always highlighted. Project cards show Live / In progress badge.
+H2: Plain section labels. No jargon in navigation.
+H3: Sticky nav + back-to-top button + external links open in new tab.
+H4: All project cards identical layout. All badges identical pill component.
+H5: Placeholder links visually flagged in red — never appear as working links.
+H6: Every project card has visual preview. Skills displayed as chips not prose.
+H8: No decorative elements without informational purpose.
+
+— DELIVERABLES —
+Desktop frame 1280px and mobile frame 375px for all sections. Component library frame with: nav bar, project card, skill badge, timeline entry, contact button — all in default and hover states.
