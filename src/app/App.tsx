@@ -188,7 +188,7 @@ export default function App() {
               }
               />
 
-              <ProjectCard
+             {/* <ProjectCard
               title="Lyapy — Biblioteca de Simulação de Caos"
               description="Biblioteca Python open-source para geração e análise de séries temporais caóticas com precisão arbitrária."
               stack={["Python", "NumPy", "Matplotlib", "OOP"]}
@@ -206,7 +206,7 @@ export default function App() {
                   stack: ["Python", "NumPy", "Matplotlib", "OOP"],
                   gradient: "from-blue-600 via-blue-400 to-gray-400",
                 })
-              }
+              }*/}
               />
 
             </div>
