@@ -175,7 +175,7 @@ export default function App() {
             status="live"
             liveUrl="https://projeto-bi-financeiro.streamlit.app/"
             githubUrl="https://github.com/EnniodosSantos/Projeto-BI-Financeiro"
-            gradient="from-teal-500 via-emerald-600 to-blue-600"
+            gradient="from-teal-500 via-blue-400 to-blue-600"
             icon="chart"
             backgroundImage={bifin}
             openInModal={true}
@@ -186,7 +186,7 @@ export default function App() {
                 liveUrl: "https://projeto-bi-financeiro.streamlit.app/",
                 githubUrl: "https://github.com/EnniodosSantos/Projeto-BI-Financeiro",
                 stack: ["Python", "Numpy", "Plotly", "Streamlit", "Pandas"],
-                gradient: "from-teal-500 via-emerald-600 to-blue-600",
+                gradient: "from-teal-500 via-blue-400 to-blue-600",
                   })
                 }
               />
