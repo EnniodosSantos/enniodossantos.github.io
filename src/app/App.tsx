@@ -83,7 +83,7 @@ export default function App() {
             </div>
 
             <h1 className="text-5xl md:text-7xl font-bold text-[var(--portfolio-text-primary)] mb-6 leading-tight">
-              Transformando <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-500">Dados</span> em <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-500">Decisões</span>
+              Criando soluções com <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-500">Dados</span> e <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-500">Inteligência Artificial</span>
             </h1>
 
             <p className="text-xl text-[var(--portfolio-text-secondary)] max-w-2xl mx-auto mb-10 leading-relaxed">
