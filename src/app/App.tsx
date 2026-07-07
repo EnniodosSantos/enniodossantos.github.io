@@ -142,25 +142,50 @@ export default function App() {
             <div className="grid lg:grid-cols-2 gap-8">
 
 
-              <ProjectCard
-                title="Preditor de Preços Airbnb RJ"
-                description="Aplicação ML end-to-end que prevê preços de aluguéis de curta temporada usando features geográficas e sazonais."
-                stack={["Python", "Scikit-learn", "Extra Trees", "Streamlit", "Pandas"]}
-                status="live"
-                liveUrl="https://projeto-previsao-airbnb.streamlit.app"
-                githubUrl="https://github.com/EnniodosSantos/Projeto-Previsao-Airbnb"
-                gradient="from-teal-500 via-emerald-600 to-green-600"
-                icon="chart"
-                backgroundImage="https://images.unsplash.com/photo-1655151485863-5bd031271d31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxSaW8lMjBkZSUyMEphbmVpcm8lMjBjaXR5JTIwdmlldyUyMENyaXN0byUyMFJlZGVudG9yfGVufDF8fHx8MTc3ODI0OTQyM3ww&ixlib=rb-4.1.0&q=80&w=1080"
-                openInModal={true}
-                onOpenModal={() =>
-                  openPreviewModal({
-                    title: "Preditor de Preços Airbnb RJ",
-                    description: "Aplicação ML end-to-end que prevê preços de aluguéis de curta temporada usando features geográficas e sazonais.",
-                    liveUrl: "https://projeto-previsao-airbnb.streamlit.app",
-                    githubUrl: "https://github.com/EnniodosSantos/Projeto-Previsao-Airbnb",
-                    stack: ["Python", "Scikit-learn", "Extra Trees", "Streamlit", "Pandas"],
-                    gradient: "from-teal-500 via-emerald-600 to-green-600",
+            <ProjectCard
+            title="Preditor de Preços Airbnb RJ"
+            description="Aplicação ML end-to-end que prevê preços de aluguéis de curta temporada usando features geográficas e sazonais."
+            stack={["Python", "Scikit-learn", "Extra Trees", "Streamlit", "Pandas"]}
+            status="live"
+            liveUrl="https://projeto-previsao-airbnb.streamlit.app"
+            githubUrl="https://github.com/EnniodosSantos/Projeto-Previsao-Airbnb"
+            gradient="from-teal-500 via-emerald-600 to-green-600"
+            icon="chart"
+            backgroundImage="https://images.unsplash.com/photo-1655151485863-5bd031271d31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxSaW8lMjBkZSUyMEphbmVpcm8lMjBjaXR5JTIwdmlldyUyMENyaXN0byUyMFJlZGVudG9yfGVufDF8fHx8MTc3ODI0OTQyM3ww&ixlib=rb-4.1.0&q=80&w=1080"
+            openInModal={true}
+            onOpenModal={() =>
+              openPreviewModal({
+                title: "Preditor de Preços Airbnb RJ",
+                description: "Aplicação ML end-to-end que prevê preços de aluguéis de curta temporada usando features geográficas e sazonais.",
+                liveUrl: "https://projeto-previsao-airbnb.streamlit.app",
+                githubUrl: "https://github.com/EnniodosSantos/Projeto-Previsao-Airbnb",
+                stack: ["Python", "Scikit-learn", "Extra Trees", "Streamlit", "Pandas"],
+                gradient: "from-teal-500 via-emerald-600 to-green-600",
+              })
+            }
+            />
+
+
+            <ProjectCard
+            title="Dashboard Financeiro Empresarial"
+            description="Dashboard interativo de KPIs financeiros construído com Streamlit e Plotly.
+                Desenvolvido como projeto de portfólio em Business Intelligence e Análise de Dados."
+            stack={["Python", "Numpy", "Plotly", "Streamlit", "Pandas"]}
+            status="live"
+            liveUrl="https://projeto-bi-financeiro.streamlit.app/"
+            githubUrl="https://github.com/EnniodosSantos/Projeto-BI-Financeiro"
+            gradient="from-teal-500 via-emerald-600 to-green-600"
+            icon="chart"
+            backgroundImage="https://images.unsplash.com/photo-1655151485863-5bd031271d31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxSaW8lMjBkZSUyMEphbmVpcm8lMjBjaXR5JTIwdmlldyUyMENyaXN0byUyMFJlZGVudG9yfGVufDF8fHx8MTc3ODI0OTQyM3ww&ixlib=rb-4.1.0&q=80&w=1080"
+            openInModal={true}
+            onOpenModal={() =>
+              openPreviewModal({
+                title: "Preditor de Preços Airbnb RJ",
+                description: "Dashboard interativo de KPIs financeiros construído com Streamlit e Plotly. Desenvolvido como projeto de portfólio em Business Intelligence e Análise de Dados.",
+                liveUrl: "https://projeto-bi-financeiro.streamlit.app/",
+                githubUrl: "https://github.com/EnniodosSantos/Projeto-BI-Financeiro",
+                stack: ["Python", "Numpy", "Plotly", "Streamlit", "Pandas"],
+                gradient: "from-teal-500 via-emerald-600 to-green-600",
                   })
                 }
               />
